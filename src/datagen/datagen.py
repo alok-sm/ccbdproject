@@ -14,7 +14,7 @@ def generate_point(training):
 	point = [round(random()*100, 2), round(random()*100, 2), round(random()*100, 2)]
 
 	if(training):
-		if((point[0] + point[1] + point[2] > 240) or (point[0] > 90) or (point[1] > 90) or (point[2] > 90)):
+		if(point[0] + point[1] + point[2] > 240):
 			point.append(-1)
 		else:
 			point.append(1)

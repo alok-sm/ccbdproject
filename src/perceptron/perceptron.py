@@ -79,10 +79,10 @@ for x in testset:
 	if r != x[3]: # if the response is not correct
 		print 'error'
 	if r == 1:
-		ax.plot([x[0], x[0]], [x[1], x[1]], [0, x[2]],'--', linewidth=2, color='b', alpha=.5)
+		ax.plot([x[0], x[0]], [x[1], x[1]], [0, x[2]],'--', linewidth=1, color='b', alpha=.5)
 		#plot(x[0],x[1],x[2],'ob')  
 	else:
-		ax.plot([x[0], x[0]], [x[1], x[1]], [0, x[2]],'--', linewidth=2, color='r', alpha=.5)
+		ax.plot([x[0], x[0]], [x[1], x[1]], [0, x[2]],'--', linewidth=1, color='r', alpha=.5)
 		#plot(x[0],x[1],x[2],'or')
 ax.set_xlabel('x')
 ax.set_ylabel('y')
