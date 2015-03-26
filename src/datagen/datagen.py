@@ -11,17 +11,13 @@ def generate_data(n, training):
 
 
 def generate_point(training):
-	point = {
-		'cpu'  : round(random()*100, 2),
-		'ram'  : round(random()*100, 2),
-		'disk' : round(random()*100, 2)
-	}
+	point = [round(random()*100, 2), round(random()*100, 2), round(random()*100, 2)]
 
 	if(training):
-		if((point['cpu'] + point['ram'] + point['disk'] > 240) or (point['cpu'] > 90) or (point['ram'] > 90) or (point['disk'] > 90)):
-			point['good'] = False
+		if((point[0] + point[1] + point[2] > 240) or (point[0] > 90) or (point[1] > 90) or (point[2] > 90)):
+			point.append(-1)
 		else:
-			point['good'] = True
+			point.append(1)
 
 	return point
 
