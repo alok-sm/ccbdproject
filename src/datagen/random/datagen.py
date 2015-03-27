@@ -1,7 +1,7 @@
 import json
 from random import random
 
-NUMBER_OF_POINTS = 1000
+NUMBER_OF_POINTS = 300
 
 def generate_data(n, training):
 	data = []
